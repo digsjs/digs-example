@@ -7,7 +7,8 @@
     "digs-example": "digs.js"
   },
   "dependencies": {
-    "digs": "digsjs/digs#coap"
+    "digs": "digsjs/digs#coap",
+    "digs-serial": "digsjs/digs-serial#coap"
   },
   "devDependencies": {
     "digs-dev": "^0.2.2-6",
