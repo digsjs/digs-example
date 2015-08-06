@@ -7,13 +7,15 @@
     "digs-example": "digs.js"
   },
   "dependencies": {
-    "digs": "^0.1.0"
+    "digs": "digsjs/digs#coap"
   },
   "devDependencies": {
-    "digs-dev": "^0.2.2-6"
+    "digs-dev": "^0.2.2-6",
+    "nodemon": "^1.4.0"
   },
   "scripts": {
-    "prepublish": "digs-dev install"
+    "prepublish": "digs-dev install",
+    "start": "nodemon -w node_modules/digs/lib -w node_modules/digs-serial/lib bin/digs.js"
   },
   "repository": {
     "type": "git",
