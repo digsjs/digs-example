@@ -33,7 +33,11 @@ digs.register({
       }
     ]
   }
-})
-  .then(function() {
-    digs.start();
-  });
+}, function(err) {
+  if (err) {
+    throw new Error(err);
+  }
+  digs.start(function() {
+    digs.log('digs-example', 'Ready!');
+  })
+});
