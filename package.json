@@ -1,29 +1,31 @@
 {
   "name": "digs-example",
-  "version": "0.1.0",
-  "description": "Example Digs server",
-  "main": "bin/digs.js",
-  "bin": {
-    "digs-example": "digs.js"
-  },
+  "version": "0.0.0",
+  "description": "Canonical example of a custom Digs server",
   "dependencies": {
     "digs": "digsjs/digs#coap",
-    "digs-serial": "digsjs/digs-serial#coap"
-  },
-  "devDependencies": {
-    "digs-dev": "^0.2.2-6",
+    "digs-serial": "digsjs/digs-serial#coap",
     "nodemon": "^1.4.0"
   },
   "scripts": {
     "prepublish": "digs-dev install",
-    "start": "nodemon -w node_modules/digs/lib -w node_modules/digs-serial/lib bin/digs.js"
+    "start": "nodemon node_modules/.bin/digs -c ./digs-example.yaml"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/digsjs/digs-example.git"
   },
   "keywords": [
-    "digs"
+    "digs",
+    "arduino",
+    "automation",
+    "broker",
+    "home",
+    "iot",
+    "mqtt",
+    "pubsub",
+    "serial",
+    "server"
   ],
   "author": "Christopher Hiller",
   "license": "MIT",
