@@ -2,11 +2,11 @@ plugins:
   digs-serial:
     devices:
       -
-        id: dink,
+        id: dink
         components:
           -
             class: relay
             id: Lava Lamp
             description: Silver Lava Lamp
-            pin: 11,
+            pin: 11
             type: NC
